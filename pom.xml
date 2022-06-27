@@ -43,7 +43,7 @@
                 <configuration>
                     <skip>true</skip>
 	    	    <argLine>
-                        --illegal-access=permit
+                        ${argLine} --illegal-access=permit
                     </argLine>
 	        </configuration>
                 <executions>
