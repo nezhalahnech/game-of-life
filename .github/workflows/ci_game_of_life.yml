@@ -5,6 +5,10 @@ on: push
 jobs:
   game-of-life-test:
     runs-on: ubuntu-latest
+      strategy:
+      matrix:
+        java: [ '11', '14', '17' ]
+
     steps:
       - name: Java version
         run: java -version
