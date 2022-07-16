@@ -24,5 +24,4 @@ jobs:
       - uses: actions/setup-java@v3
         with:
           distribution: 'adopt'
-          java-version: '14'
-
+          java-version: ${{ matrix.java }}
